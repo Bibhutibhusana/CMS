@@ -1,0 +1,33 @@
+
+<div fxLayoutAlign="center center" fxFlexFill class="main-div" (contextmenu)="__elementSelectionService.select('1339060419',$event)" [ngStyle]="__elementSelectionService.getStyles('1339060419')"(click)='__elementSelectionService.clear()'>
+  <mat-card fxFlex="100" (contextmenu)="__elementSelectionService.select('836678146',$event)" [ngStyle]="__elementSelectionService.getStyles('836678146')">
+      <mat-toolbar color="primary" (contextmenu)="__elementSelectionService.select('2110032530',$event)" [ngStyle]="__elementSelectionService.getStyles('2110032530')">Login page</mat-toolbar>
+      <form #userForm="ngForm" fxLayoutAlign="stretch" fxLayout="column" class="signup-form" (contextmenu)="__elementSelectionService.select('1528292507',$event)" [ngStyle]="__elementSelectionService.getStyles('1528292507')">
+        <mat-grid-list cols="1" rowHeight="70px" (contextmenu)="__elementSelectionService.select('1500766484',$event)" [ngStyle]="__elementSelectionService.getStyles('1500766484')">
+          <mat-grid-tile (contextmenu)="__elementSelectionService.select('502863514',$event)" [ngStyle]="__elementSelectionService.getStyles('502863514')">
+           <mat-form-field appearance="fill" (contextmenu)="__elementSelectionService.select('1144037293',$event)" [ngStyle]="__elementSelectionService.getStyles('1144037293')">
+             <mat-label (contextmenu)="__elementSelectionService.select('552048780',$event)" [ngStyle]="__elementSelectionService.getStyles('552048780')">UserId</mat-label>
+             <input matInput [(ngModel)]="user.userId" name="userId" (contextmenu)="__elementSelectionService.select('1725609669',$event)" [ngStyle]="__elementSelectionService.getStyles('1725609669')">
+             <button mat-icon-button matSuffix (click)="hide = !hide" (contextmenu)="__elementSelectionService.select('859971906',$event)" [ngStyle]="__elementSelectionService.getStyles('859971906')">
+              <mat-icon (contextmenu)="__elementSelectionService.select('1934564720',$event)" [ngStyle]="__elementSelectionService.getStyles('1934564720')">{{hide?'visibility_off':'visibility'}}</mat-icon>
+            </button>
+           </mat-form-field>
+         </mat-grid-tile>
+
+         <mat-grid-tile (contextmenu)="__elementSelectionService.select('1878055021',$event)" [ngStyle]="__elementSelectionService.getStyles('1878055021')">
+           <mat-form-field appearance="fill" (contextmenu)="__elementSelectionService.select('1554982856',$event)" [ngStyle]="__elementSelectionService.getStyles('1554982856')">
+             <mat-label (contextmenu)="__elementSelectionService.select('2126861614',$event)" [ngStyle]="__elementSelectionService.getStyles('2126861614')">Password</mat-label>
+             <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="user.password" name="password" class="mat-form-field-autofill-control" (contextmenu)="__elementSelectionService.select('1978295067',$event)" [ngStyle]="__elementSelectionService.getStyles('1978295067')">
+             <button mat-icon-button matSuffix (click)="hide = !hide" (contextmenu)="__elementSelectionService.select('472972923',$event)" [ngStyle]="__elementSelectionService.getStyles('472972923')">
+               <mat-icon (contextmenu)="__elementSelectionService.select('964954962',$event)" [ngStyle]="__elementSelectionService.getStyles('964954962')">{{hide?'visibility_off':'visibility'}}</mat-icon>
+             </button>
+           </mat-form-field>
+         </mat-grid-tile>
+
+         <mat-grid-tile (contextmenu)="__elementSelectionService.select('1841055081',$event)" [ngStyle]="__elementSelectionService.getStyles('1841055081')">
+           <button mat-raised-button color="accent" (click)="onSubmit(userForm.value)" (contextmenu)="__elementSelectionService.select('1273495934',$event)" [ngStyle]="__elementSelectionService.getStyles('1273495934')">Login</button>
+         </mat-grid-tile>
+       </mat-grid-list>
+      </form>
+  </mat-card>
+</div>

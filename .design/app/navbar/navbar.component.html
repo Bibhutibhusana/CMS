@@ -1,0 +1,40 @@
+<mat-sidenav-container class="sidenav-container" (contextmenu)="__elementSelectionService.select('883061979',$event)" [ngStyle]="__elementSelectionService.getStyles('883061979')"(click)='__elementSelectionService.clear()'>
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false" (contextmenu)="__elementSelectionService.select('1600327907',$event)" [ngStyle]="__elementSelectionService.getStyles('1600327907')">
+    <mat-toolbar fxLayoutAlign="space-between center" (contextmenu)="__elementSelectionService.select('2025890680',$event)" [ngStyle]="__elementSelectionService.getStyles('2025890680')">
+
+      <h2 (contextmenu)="__elementSelectionService.select('991146708',$event)" [ngStyle]="__elementSelectionService.getStyles('991146708')">Menu</h2>
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" (contextmenu)="__elementSelectionService.select('1982050051',$event)" [ngStyle]="__elementSelectionService.getStyles('1982050051')">
+        <mat-icon aria-label="Side nav toggle icon" (contextmenu)="__elementSelectionService.select('822103340',$event)" [ngStyle]="__elementSelectionService.getStyles('822103340')">menu</mat-icon>
+      </button>
+
+    </mat-toolbar>
+    <mat-nav-list (contextmenu)="__elementSelectionService.select('1286005527',$event)" [ngStyle]="__elementSelectionService.getStyles('1286005527')">
+      
+      <a mat-list-item routerLink="/teams" (contextmenu)="__elementSelectionService.select('1778740549',$event)" [ngStyle]="__elementSelectionService.getStyles('1778740549')">Teams</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content (contextmenu)="__elementSelectionService.select('20290737',$event)" [ngStyle]="__elementSelectionService.getStyles('20290737')">
+    <mat-toolbar color="primary" (contextmenu)="__elementSelectionService.select('854575254',$event)" [ngStyle]="__elementSelectionService.getStyles('854575254')">
+    <nav class="navbar" (contextmenu)="__elementSelectionService.select('1235889031',$event)" [ngStyle]="__elementSelectionService.getStyles('1235889031')">
+    	<button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="!drawer.opened" (contextmenu)="__elementSelectionService.select('134486194',$event)" [ngStyle]="__elementSelectionService.getStyles('134486194')">
+        <mat-icon aria-label="Side nav toggle icon" (contextmenu)="__elementSelectionService.select('637132055',$event)" [ngStyle]="__elementSelectionService.getStyles('637132055')">menu</mat-icon>
+      </button>
+      
+      
+      <span (contextmenu)="__elementSelectionService.select('1763576390',$event)" [ngStyle]="__elementSelectionService.getStyles('1763576390')">CMS</span>
+      <button class="float-right" (contextmenu)="__elementSelectionService.select('1903223537',$event)" [ngStyle]="__elementSelectionService.getStyles('1903223537')">
+      	<a mat-list-item (click)="openLogin()" (contextmenu)="__elementSelectionService.select('1503245797',$event)" [ngStyle]="__elementSelectionService.getStyles('1503245797')">Log in</a>
+      </button>
+      <button class="text-right" (contextmenu)="__elementSelectionService.select('845404836',$event)" [ngStyle]="__elementSelectionService.getStyles('845404836')">
+      	<a mat-list-item (click)="openSignup()" (contextmenu)="__elementSelectionService.select('733391508',$event)" [ngStyle]="__elementSelectionService.getStyles('733391508')">Sign up</a>
+      </button>
+    </nav>
+      
+    </mat-toolbar>
+    
+    
+
+    
+    <router-outlet (contextmenu)="__elementSelectionService.select('1571271289',$event)" [ngStyle]="__elementSelectionService.getStyles('1571271289')"></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

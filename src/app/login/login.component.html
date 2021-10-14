@@ -1,0 +1,41 @@
+<!-- <h2 mat-dialog-title>Session Timeout</h2>
+<mat-dialog-content>
+  You will be logged out due to inactivity
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button>Keep me logged in</button>
+
+  <button mat-button  mat-dialog-close = "true">LogOut</button>
+</mat-dialog-actions> -->
+<div fxLayoutAlign= "center center" fxFlexFill class = "main-div">
+  <mat-card fxFlex = "100">
+      <mat-toolbar color = "primary">Login page</mat-toolbar>
+      <form #userForm = ngForm   fxLayoutAlign = "stretch" fxLayout = "column" class = "signup-form">
+        <mat-grid-list cols= "1" rowHeight = 70px>
+          <mat-grid-tile>
+           <mat-form-field appearance="fill">
+             <mat-label>UserId</mat-label>
+             <input matInput [(ngModel)] = "user.userId" name = "userId">
+             <button mat-icon-button matSuffix (click) = 'hide = !hide' >
+              <mat-icon>{{hide?'visibility_off':'visibility'}}</mat-icon>
+            </button>
+           </mat-form-field>
+         </mat-grid-tile>
+
+         <mat-grid-tile>
+           <mat-form-field appearance="fill">
+             <mat-label>Password</mat-label>
+             <input matInput [type] = "hide ? 'password' : 'text'"  [(ngModel)] = "user.password" name ="password" class = "mat-form-field-autofill-control">
+             <button mat-icon-button matSuffix (click) = 'hide = !hide' >
+               <mat-icon>{{hide?'visibility_off':'visibility'}}</mat-icon>
+             </button>
+           </mat-form-field>
+         </mat-grid-tile>
+
+         <mat-grid-tile>
+           <button  mat-raised-button color = "accent" (click) ="onSubmit(userForm.value)">Login</button>
+         </mat-grid-tile>
+       </mat-grid-list>
+      </form>
+  </mat-card>
+</div>

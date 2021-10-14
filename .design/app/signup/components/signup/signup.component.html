@@ -1,0 +1,47 @@
+
+<div fxLayoutAlign="center center" fxFlexFill class="main-div" (contextmenu)="__elementSelectionService.select('301595762',$event)" [ngStyle]="__elementSelectionService.getStyles('301595762')"(click)='__elementSelectionService.clear()'>
+  <mat-card fxFlex="60" (contextmenu)="__elementSelectionService.select('253906889',$event)" [ngStyle]="__elementSelectionService.getStyles('253906889')">
+      <mat-toolbar color="primary" (contextmenu)="__elementSelectionService.select('1365653555',$event)" [ngStyle]="__elementSelectionService.getStyles('1365653555')">SignUp page</mat-toolbar>
+      <form [formGroup]="userForm" (ngSubmit)="onSubmit()" fxLayoutAlign="stretch" fxLayout="column" class="signup-form" (contextmenu)="__elementSelectionService.select('1408621960',$event)" [ngStyle]="__elementSelectionService.getStyles('1408621960')">
+        <mat-grid-list cols="2" rowHeight="70px" (contextmenu)="__elementSelectionService.select('292812817',$event)" [ngStyle]="__elementSelectionService.getStyles('292812817')">
+          <mat-grid-tile (contextmenu)="__elementSelectionService.select('204644849',$event)" [ngStyle]="__elementSelectionService.getStyles('204644849')">
+           <mat-form-field appearance="fill" (contextmenu)="__elementSelectionService.select('1828038628',$event)" [ngStyle]="__elementSelectionService.getStyles('1828038628')">
+             <mat-label (contextmenu)="__elementSelectionService.select('294727279',$event)" [ngStyle]="__elementSelectionService.getStyles('294727279')">UserId</mat-label>
+             <input matInput formControlName="userId" name="userId" (contextmenu)="__elementSelectionService.select('531427132',$event)" [ngStyle]="__elementSelectionService.getStyles('531427132')">
+           </mat-form-field>
+         </mat-grid-tile>
+         <mat-grid-tile (contextmenu)="__elementSelectionService.select('101246993',$event)" [ngStyle]="__elementSelectionService.getStyles('101246993')">
+           <mat-form-field appearance="fill" (contextmenu)="__elementSelectionService.select('1191421363',$event)" [ngStyle]="__elementSelectionService.getStyles('1191421363')">
+             <mat-label (contextmenu)="__elementSelectionService.select('1601767786',$event)" [ngStyle]="__elementSelectionService.getStyles('1601767786')">FullName</mat-label>
+             <input matInput formControlName="fullName" name="fullName" (contextmenu)="__elementSelectionService.select('659871926',$event)" [ngStyle]="__elementSelectionService.getStyles('659871926')">
+           </mat-form-field>
+         </mat-grid-tile>
+
+         <mat-grid-tile (contextmenu)="__elementSelectionService.select('1717429293',$event)" [ngStyle]="__elementSelectionService.getStyles('1717429293')">
+           <mat-form-field appearance="fill" (contextmenu)="__elementSelectionService.select('1017768808',$event)" [ngStyle]="__elementSelectionService.getStyles('1017768808')">
+             <mat-label (contextmenu)="__elementSelectionService.select('722241486',$event)" [ngStyle]="__elementSelectionService.getStyles('722241486')">Password</mat-label>
+             <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" name="password" (contextmenu)="__elementSelectionService.select('714894193',$event)" [ngStyle]="__elementSelectionService.getStyles('714894193')">
+             <button mat-icon-button matSuffix (click)="hide = !hide" (contextmenu)="__elementSelectionService.select('602508931',$event)" [ngStyle]="__elementSelectionService.getStyles('602508931')">
+               <mat-icon (contextmenu)="__elementSelectionService.select('1349043005',$event)" [ngStyle]="__elementSelectionService.getStyles('1349043005')">{{hide?'visibility_off':'visibility'}}</mat-icon>
+             </button>
+           </mat-form-field>
+         </mat-grid-tile>
+         <mat-grid-tile (contextmenu)="__elementSelectionService.select('529865737',$event)" [ngStyle]="__elementSelectionService.getStyles('529865737')">
+           <mat-form-field appearance="fill" (contextmenu)="__elementSelectionService.select('1444625257',$event)" [ngStyle]="__elementSelectionService.getStyles('1444625257')">
+             <mat-label (contextmenu)="__elementSelectionService.select('963197631',$event)" [ngStyle]="__elementSelectionService.getStyles('963197631')">Confirm Password</mat-label>
+             <input matInput [(ngModel)]="user.password" name="password" (contextmenu)="__elementSelectionService.select('797865860',$event)" [ngStyle]="__elementSelectionService.getStyles('797865860')">
+           </mat-form-field>
+         </mat-grid-tile>
+         <mat-grid-tile (contextmenu)="__elementSelectionService.select('407655208',$event)" [ngStyle]="__elementSelectionService.getStyles('407655208')">
+           <mat-form-field appearance="fill" (contextmenu)="__elementSelectionService.select('386134843',$event)" [ngStyle]="__elementSelectionService.getStyles('386134843')">
+             <mat-label (contextmenu)="__elementSelectionService.select('1733267366',$event)" [ngStyle]="__elementSelectionService.getStyles('1733267366')">dob</mat-label>
+             <input type="date" matInput formControlName="dob" [value]="user.dob| date : 'yyyy-MM-dd'" name="dob" (contextmenu)="__elementSelectionService.select('992081564',$event)" [ngStyle]="__elementSelectionService.getStyles('992081564')">
+           </mat-form-field>
+         </mat-grid-tile>
+         <mat-grid-tile (contextmenu)="__elementSelectionService.select('1091446723',$event)" [ngStyle]="__elementSelectionService.getStyles('1091446723')">
+           <button type="submit" mat-raised-button color="accent" (contextmenu)="__elementSelectionService.select('1235001074',$event)" [ngStyle]="__elementSelectionService.getStyles('1235001074')">SignUp</button>
+         </mat-grid-tile>
+       </mat-grid-list>
+      </form>
+  </mat-card>
+</div>

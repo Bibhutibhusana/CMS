@@ -1,0 +1,95 @@
+<!--<div class = "panel">
+  <div class="panel-body ">
+    <div class = "card border border-dark">
+      <div class="card-head bg-primary text-secondary">
+        <h2>Please SignUp</h2>
+      </div>
+      <div >
+        <form #userForm = ngForm>
+          <mat-grid-list cols= "2" rowHeight = 70px>
+             <mat-grid-tile>
+              <mat-form-field appearance="fill">
+                <mat-label>UserId</mat-label>
+                <input matInput [(ngModel)] = "user.userId" name = "userId">
+              </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <mat-form-field appearance="fill">
+                <mat-label>FullName</mat-label>
+                <input matInput [(ngModel)] = "user.fullName" name = "fullName">
+              </mat-form-field>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+              <mat-form-field appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput [(ngModel)] = "user.password" name ="password">
+              </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <mat-form-field appearance="fill">
+                <mat-label>Confirm Password</mat-label>
+                <input matInput [(ngModel)] = "user.password" name ="password">
+              </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <mat-form-field appearance="fill">
+                <mat-label>dob</mat-label>
+                <input matInput [(ngModel)] = "user.dob" name ="dob">
+              </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <button mat-raised-button color = "accent">Login</button>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div fxLayoutAlign= "center center" fxFlexFill class = "main-div">
+  <mat-card fxFlex = "60">
+      <mat-toolbar color = "primary">SignUp page</mat-toolbar>
+      <form [formGroup] = "userForm"  (ngSubmit) ="onSubmit()" fxLayoutAlign = "stretch" fxLayout = "column" class = "signup-form">
+        <mat-grid-list cols= "2" rowHeight = 70px>
+          <mat-grid-tile>
+           <mat-form-field appearance="fill">
+             <mat-label>UserId</mat-label>
+             <input matInput formControlName ="userId" name = "userId">
+           </mat-form-field>
+         </mat-grid-tile>
+         <mat-grid-tile>
+           <mat-form-field appearance="fill">
+             <mat-label>FullName</mat-label>
+             <input matInput formControlName ="fullName" name = "fullName">
+           </mat-form-field>
+         </mat-grid-tile>
+
+         <mat-grid-tile>
+           <mat-form-field appearance="fill">
+             <mat-label>Password</mat-label>
+             <input matInput [type] = "hide ? 'password' : 'text'" formControlName ="password" name ="password">
+             <button mat-icon-button matSuffix (click) = 'hide = !hide' >
+               <mat-icon>{{hide?'visibility_off':'visibility'}}</mat-icon>
+             </button>
+           </mat-form-field>
+         </mat-grid-tile>
+         <mat-grid-tile>
+           <mat-form-field appearance="fill">
+             <mat-label>Confirm Password</mat-label>
+             <input matInput [(ngModel)] = "user.password" name ="password">
+           </mat-form-field>
+         </mat-grid-tile>
+         <mat-grid-tile>
+           <mat-form-field appearance="fill">
+             <mat-label>dob</mat-label>
+             <input type = "date" matInput formControlName ="dob" [value] ="user.dob| date : 'yyyy-MM-dd'" name ="dob">
+           </mat-form-field>
+         </mat-grid-tile>
+         <mat-grid-tile>
+           <button type = "submit" mat-raised-button color = "accent" >SignUp</button>
+         </mat-grid-tile>
+       </mat-grid-list>
+      </form>
+  </mat-card>
+</div>

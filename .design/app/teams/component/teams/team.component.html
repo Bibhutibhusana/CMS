@@ -1,0 +1,47 @@
+<div class="container" (contextmenu)="__elementSelectionService.select('1163001852',$event)" [ngStyle]="__elementSelectionService.getStyles('1163001852')"(click)='__elementSelectionService.clear()'>
+  <table mat-table [dataSource]="teamList" class="mat-elevation-z8" (contextmenu)="__elementSelectionService.select('1303823973',$event)" [ngStyle]="__elementSelectionService.getStyles('1303823973')">
+
+    
+
+    
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef (contextmenu)="__elementSelectionService.select('131235376',$event)" [ngStyle]="__elementSelectionService.getStyles('131235376')"> Seq.Id. </th>
+      <td mat-cell *matCellDef="let element" (contextmenu)="__elementSelectionService.select('409464344',$event)" [ngStyle]="__elementSelectionService.getStyles('409464344')"> {{element.id}} </td>
+    </ng-container>
+
+    
+    <ng-container matColumnDef="teamCode">
+      <th mat-header-cell *matHeaderCellDef (contextmenu)="__elementSelectionService.select('821104790',$event)" [ngStyle]="__elementSelectionService.getStyles('821104790')"> Team Id </th>
+      <td mat-cell *matCellDef="let element" (contextmenu)="__elementSelectionService.select('1267690755',$event)" [ngStyle]="__elementSelectionService.getStyles('1267690755')"> {{element.teamCode}} </td>
+    </ng-container>
+
+    
+    <ng-container matColumnDef="teamName">
+      <th mat-header-cell *matHeaderCellDef (contextmenu)="__elementSelectionService.select('1605941692',$event)" [ngStyle]="__elementSelectionService.getStyles('1605941692')"> Name </th>
+      <td mat-cell *matCellDef="let element" (contextmenu)="__elementSelectionService.select('2022214525',$event)" [ngStyle]="__elementSelectionService.getStyles('2022214525')"> {{element.teamName}} </td>
+    </ng-container>
+
+    
+    <ng-container matColumnDef="location">
+      <th mat-header-cell *matHeaderCellDef (contextmenu)="__elementSelectionService.select('1086673242',$event)" [ngStyle]="__elementSelectionService.getStyles('1086673242')"> Place </th>
+      <td mat-cell *matCellDef="let element" (contextmenu)="__elementSelectionService.select('1880279860',$event)" [ngStyle]="__elementSelectionService.getStyles('1880279860')"> {{element.location}} </td>
+    </ng-container>
+
+    
+    <ng-container matColumnDef="aliasName">
+      <th mat-header-cell *matHeaderCellDef (contextmenu)="__elementSelectionService.select('1795025363',$event)" [ngStyle]="__elementSelectionService.getStyles('1795025363')"> Alias </th>
+      <td mat-cell *matCellDef="let element" (contextmenu)="__elementSelectionService.select('1444037778',$event)" [ngStyle]="__elementSelectionService.getStyles('1444037778')"> {{element.aliasName}} </td>
+    </ng-container>
+
+    
+    <ng-container matColumnDef>
+      <th mat-header-cell *matHeaderCellDef (contextmenu)="__elementSelectionService.select('1010274443',$event)" [ngStyle]="__elementSelectionService.getStyles('1010274443')"> No.Of.Player </th>
+      <td mat-cell *matCellDef="let element" (contextmenu)="__elementSelectionService.select('1520084818',$event)" [ngStyle]="__elementSelectionService.getStyles('1520084818')"> 11 </td>
+    </ng-container>
+
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns" (contextmenu)="__elementSelectionService.select('1596747427',$event)" [ngStyle]="__elementSelectionService.getStyles('1596747427')"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (contextmenu)="__elementSelectionService.select('459179776',$event)" [ngStyle]="__elementSelectionService.getStyles('459179776')"></tr>
+  </table>
+</div>

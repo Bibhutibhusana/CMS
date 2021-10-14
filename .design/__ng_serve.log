@@ -1,0 +1,129 @@
+
+> cms@0.0.0 ng
+> ng "s" "__design__" "--port" "5678"
+
+- Generating browser application bundles (phase: setup)...
+√ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |      Size
+styles.css, styles.js | styles        | 616.92 kB
+polyfills.js          | polyfills     | 381.05 kB
+vendor.js             | vendor        | 379.36 kB
+scripts.js            | scripts       |  58.15 kB
+runtime.js            | runtime       |   5.63 kB
+main.js               | main          |   1.85 kB
+
+| Initial Total |   1.41 MB
+
+Build at: 2021-10-07T20:14:59.860Z - Hash: 9331a98d59c6d0a54e33 - Time: 81744ms
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/app-routing.module.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/app.component.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/app.module.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/login/login-routing.module.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/login/login.component.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/login/login.module.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/material/material.module.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/navbar/navbar.component.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/services/team.service.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/services/user-service.service.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/signup/components/signup/signup.component.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/signup/signup-routing.module.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/signup/signup.module.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/signup/user.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/teams/component/create-team/create-team.component.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/teams/component/teams/team.component.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/teams/team.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/teams/teams-routing.module.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/app/teams/teams.module.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/environments/environment.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/main.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: B:/MY_Angular_Journey/CMS/src/polyfills.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+
+
+./.design/main.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/node_modules/@ngtools/webpack/src/ivy/index.js):
+Error: B:\MY_Angular_Journey\CMS\.design\main.ts is missing from the TypeScript compilation. Please make sure it is in your tsconfig via the 'files' or 'include' property.
+    at B:\MY_Angular_Journey\CMS\node_modules\@angular-devkit\build-angular\node_modules\@ngtools\webpack\src\ivy\loader.js:59:26
+
+./.design/polyfills.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/node_modules/@ngtools/webpack/src/ivy/index.js):
+Error: B:\MY_Angular_Journey\CMS\.design\polyfills.ts is missing from the TypeScript compilation. Please make sure it is in your tsconfig via the 'files' or 'include' property.
+    at B:\MY_Angular_Journey\CMS\node_modules\@angular-devkit\build-angular\node_modules\@ngtools\webpack\src\ivy\loader.js:59:26
+
+
+
+** Angular Live Development Server is listening on localhost:5678, open your browser on http://localhost:5678/ **
+
+√ Browser application bundle generation complete.
+
+6 unchanged chunks
+
+Build at: 2021-10-07T20:29:27.134Z - Hash: 765a3ae123d5f0a02fde - Time: 4299ms
+
+./.design/main.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/node_modules/@ngtools/webpack/src/ivy/index.js):
+Error: B:\MY_Angular_Journey\CMS\.design\main.ts is missing from the TypeScript compilation. Please make sure it is in your tsconfig via the 'files' or 'include' property.
+    at B:\MY_Angular_Journey\CMS\node_modules\@angular-devkit\build-angular\node_modules\@ngtools\webpack\src\ivy\loader.js:59:26
+
+./.design/polyfills.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/node_modules/@ngtools/webpack/src/ivy/index.js):
+Error: B:\MY_Angular_Journey\CMS\.design\polyfills.ts is missing from the TypeScript compilation. Please make sure it is in your tsconfig via the 'files' or 'include' property.
+    at B:\MY_Angular_Journey\CMS\node_modules\@angular-devkit\build-angular\node_modules\@ngtools\webpack\src\ivy\loader.js:59:26
+
+
+√ Browser application bundle generation complete.
+
+6 unchanged chunks
+
+Build at: 2021-10-07T20:51:06.388Z - Hash: 765a3ae123d5f0a02fde - Time: 3673ms
+
+./.design/main.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/node_modules/@ngtools/webpack/src/ivy/index.js):
+Error: B:\MY_Angular_Journey\CMS\.design\main.ts is missing from the TypeScript compilation. Please make sure it is in your tsconfig via the 'files' or 'include' property.
+    at B:\MY_Angular_Journey\CMS\node_modules\@angular-devkit\build-angular\node_modules\@ngtools\webpack\src\ivy\loader.js:59:26
+
+./.design/polyfills.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/node_modules/@ngtools/webpack/src/ivy/index.js):
+Error: B:\MY_Angular_Journey\CMS\.design\polyfills.ts is missing from the TypeScript compilation. Please make sure it is in your tsconfig via the 'files' or 'include' property.
+    at B:\MY_Angular_Journey\CMS\node_modules\@angular-devkit\build-angular\node_modules\@ngtools\webpack\src\ivy\loader.js:59:26
+
+
