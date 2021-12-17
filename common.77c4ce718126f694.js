@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkCMS=self.webpackChunkCMS||[]).push([[592],{3143:(u,e,s)=>{s.d(e,{e:()=>t});class t{constructor(){this.updatedDate=new Date}}}}]);
